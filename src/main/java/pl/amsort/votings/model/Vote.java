@@ -9,16 +9,13 @@ public class Vote {
     private boolean isYes;
     private String voterName;
 
-
-
-
-    public Vote(int votingId, boolean isYes) {
+    Vote(int votingId, boolean isYes) {
         this.votingId = votingId;
         this.isYes = isYes;
     }
 
     @JsonCreator
-    public Vote(@JsonProperty("votingId") int votingId, @JsonProperty("isYes") boolean isYes, @JsonProperty("voterName") String voterName) {
+    Vote(@JsonProperty("votingId") int votingId, @JsonProperty("isYes") boolean isYes, @JsonProperty("voterName") String voterName) {
         this.votingId = votingId;
         this.isYes = isYes;
         this.voterName = voterName;
@@ -32,7 +29,7 @@ public class Vote {
         this.votingId = votingId;
     }
 
-    public boolean isYes() {
+    boolean isYes() {
         return isYes;
     }
 
@@ -40,7 +37,7 @@ public class Vote {
         isYes = yes;
     }
 
-    public String getVoterName() {
+    String getVoterName() {
         return voterName;
     }
 
