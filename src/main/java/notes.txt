@@ -1,0 +1,14 @@
+//body for posting a voting
+
+{
+    "question": "is it blue?",
+    "duration": "PT1M40S"
+}
+
+// body for posting a vote
+
+{
+    "votingId": 1,
+    "isYes": true,
+    "voterName": "Staszek"
+}
